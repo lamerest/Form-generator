@@ -1,0 +1,167 @@
+{
+  "name": "Заявка на экскурсионный полет на Марс",
+  "action": "",
+  "method": "post",
+  "theme": "white",
+  "class": "form",
+  "inputs": [
+    {
+      "label": "Фамилия",
+      "type": "text",
+      "id": "last_name",
+      "required": true,
+      "checkbox": {
+        "label": "ранее менялась",
+        "id": "changed_checkbox",
+        "input": {
+          "label": "Старая фамилия",
+          "id": "past_last_name",
+          "type": "text"
+        }
+      }
+    },
+    {
+      "label": "Имя",
+      "type": "text",
+      "id": "first_name",
+      "required": true
+    },
+    {
+      "label": "Отвечство",
+      "type": "text",
+      "id": "middle_name",
+      "required": true,
+      "checkbox": {
+        "label": "отсутствует",
+        "id": "no_middle_name",
+        "blockInput": true
+      }
+    },
+    {
+      "label": "Фамилия латиницей",
+      "type": "latin",
+      "id": "last_name_latin",
+      "required": true
+    },
+    {
+      "label": "Имя латиницей",
+      "type": "latin",
+      "id": "first_name_latin",
+      "required": true
+    },
+    {
+      "label": "Пол",
+      "type": "list",
+      "id": "sex",
+      "required": true,
+      "options": [
+        {
+          "text": "мужской",
+          "value": "male"
+        },
+        {
+          "text": "женский",
+          "value": "female"
+        }]
+    },
+    {
+      "label": "Дата рождения",
+      "type": "date",
+      "id": "birth_date",
+      "required": true
+    },
+    {
+      "label": "Дата",
+      "type": "date",
+      "id": "date"
+    },
+    {
+      "label": "Семейное положение",
+      "type": "list",
+      "id": "marital_status",
+      "options": [
+        {
+          "text": "Один(-на)",
+          "value": "alone"
+        },
+        {
+          "text": "Есть семья",
+          "value": "family"
+        },
+        {
+          "text": "В отношениях",
+          "value": "relationships"
+        }]
+    },
+    {
+      "label": "Образование",
+      "type": "list",
+      "id": "education",
+      "optgroups": [
+        {
+          "label": "Russia",
+          "options": [
+            {
+              "text": "ЛЭТИ",
+              "value": "ETU"
+            },
+            {
+              "text": "ВШЭ",
+              "value": "HSE"
+            },
+            {
+              "text": "МГУ",
+              "value": "MSU"
+            },
+            {
+              "text": "NSTU",
+              "value": "ETU"
+            },
+            {
+              "text": "НГУ",
+              "value": "NSU"
+            }]
+        },
+        {
+          "label": "USA",
+          "options": ["Harvard", "MIT", "Stanford"]
+        }
+      ],
+      "options": [
+        {
+          "text": "А",
+          "value": "A"
+        },
+        {
+          "text": "Б",
+          "value": "B"
+        },
+        {
+          "text": "В",
+          "value": "C"
+        }]
+    },
+    {
+      "label": "Моб. телефон",
+      "type": "tel",
+      "id": "phone",
+      "placeholder": "+7"
+    },
+    {
+      "label": "Электронная почта",
+      "placeholder": "mail@mail.com",
+      "id": "mail",
+      "type": "email"
+    },
+    {
+      "label": "Ставя эту галочку, я подтверждаю, что поставил её в трезвом уме и твёрдой памяти.",
+      "type": "checkbox",
+      "id": "confirmation",
+      "required": true
+    }
+  ],
+    "submit": {
+      "text": "Отправить",
+      "onclick": ""
+    }
+}
