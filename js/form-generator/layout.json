@@ -20,10 +20,11 @@
       }
     },
     {
-      "label": "Имя",
-      "type": "text",
-      "id": "first_name",
-      "required": true
+      "label":"Имя",
+      "id":"first_name",
+      "type":"text",
+      "required": "true",
+      "placeholder":"Введите имя..."
     },
     {
       "label": "Отвечство",
@@ -155,6 +156,7 @@
     }
   ],
     "submit": {
-      "text": "Отправить"
+      "text": "Отправить",
+      "id": "submit"
     }
 }
