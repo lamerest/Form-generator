@@ -2,8 +2,7 @@
   "name": "Заявка на экскурсионный полет на Марс",
   "action": "",
   "method": "post",
-  "theme": "white",
-  "class": "form",
+  "theme": "black",
   "inputs": [
     {
       "label": "Фамилия",
@@ -68,12 +67,7 @@
       "label": "Дата рождения",
       "type": "date",
       "id": "birth_date",
-      "required": true
-    },
-    {
-      "label": "Дата",
-      "type": "date",
-      "id": "date"
+      "required": false
     },
     {
       "label": "Семейное положение",
@@ -161,7 +155,6 @@
     }
   ],
     "submit": {
-      "text": "Отправить",
-      "onclick": ""
+      "text": "Отправить"
     }
 }
