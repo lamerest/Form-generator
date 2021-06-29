@@ -791,5 +791,3 @@ function submitMail() {
     }
     return true
 }
-
-
